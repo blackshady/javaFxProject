@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="1081.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="school.management.ui.main.MainController">
+   <children>
+      <AnchorPane prefHeight="621.0" prefWidth="1081.0">
+         <children>
+            <AnchorPane layoutX="791.0" layoutY="75.0" prefHeight="565.0" prefWidth="305.0" style="-fx-background-color: #ec268f;">
+               <children>
+                  <StackPane fx:id="sidePane" layoutY="8.0" prefHeight="565.0" prefWidth="305.0">
+                     <children>
+                        <Pane prefHeight="495.0" prefWidth="278.0">
+                           <children>
+                              <ImageView id="PHOTOID" fitHeight="180.0" fitWidth="200.0" layoutX="56.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true" />
+                              <JFXTextField layoutX="86.0" layoutY="306.0" prefHeight="25.0" prefWidth="174.0" />
+                              <JFXTextField layoutX="86.0" layoutY="361.0" prefHeight="25.0" prefWidth="174.0" />
+                              <Label layoutX="25.0" layoutY="305.0" prefHeight="35.0" prefWidth="46.0" text="NAME:" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="25.0" layoutY="356.0" prefHeight="35.0" prefWidth="46.0" text="ID:" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </StackPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="40.0" prefHeight="35.0" prefWidth="1096.0" style="-fx-background-color: #ec268f;" />
+            <AnchorPane prefHeight="35.0" prefWidth="1096.0" style="-fx-background-color: #ec268f;" />
+            <AnchorPane layoutY="40.0" prefHeight="603.0" prefWidth="797.0">
+               <children>
+                  <JFXTabPane layoutX="20.0" prefHeight="586.0" prefWidth="769.0">
+                     <tabs>
+                        <Tab style="-fx-background-color: #ec268f;" text="FILE">
+                           <content>
+                              <AnchorPane fx:id="MainAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <StackPane fx:id="PaneHolder" prefHeight="551.0" prefWidth="769.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab style="-fx-background-color: #ec268f;" text="ABOUT">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="757.0" />
+                           </content>
+                        </Tab>
+                        <Tab style="-fx-background-color: #ec268f;" text="HELP">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                           </content>
+                        </Tab>
+                     </tabs>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXTabPane>
+               </children>
+            </AnchorPane>
+            <JFXButton id="search_but" layoutX="1049.0" layoutY="44.0" prefHeight="25.0" prefWidth="33.0" stylesheets="@main.css" text="  " />
+            <JFXTextField id="search_bar" focusColor="WHITE" labelFloat="true" layoutX="859.0" layoutY="44.0" prefHeight="25.0" prefWidth="189.0" promptText="ENTER WORD" unFocusColor="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="school.management.ui.login.SMSLoginController">
+   <children>
+      <ImageView fx:id="bg1" fitHeight="500.0" fitWidth="526.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0">
+         <image>
+            <Image url="@../../../../school.management.login.icons/SMS%20IMAGE%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bg2" fitHeight="500.0" fitWidth="526.0" layoutX="-526.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../school.management.login.icons/SMS%20IMAGE%202.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="500.0" fitWidth="336.0" layoutX="523.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="525.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../../school.management.login.icons/SMS%20H.png" />
+         </image>
+      </ImageView>
+      <JFXButton id="staff_login" fx:id="Staff_b" layoutX="596.0" layoutY="87.0" onAction="#staffClick" prefHeight="159.0" prefWidth="153.0" ripplerFill="#decfcf" stylesheets="@SMSSTYLE.css" text=" " />
+      <JFXButton id="admin_login" fx:id="admin_login" layoutX="592.0" layoutY="268.0" onAction="#adminClick" prefHeight="159.0" prefWidth="153.0" stylesheets="@SMSSTYLE.css" text=" " />
+      <JFXButton id="close_but" fx:id="close_but" buttonType="RAISED" layoutX="775.0" onAction="#close" prefHeight="14.0" prefWidth="14.0" stylesheets="@SMSSTYLE.css" text=" " />
+      <JFXButton id="mini_but" fx:id="mini_but" buttonType="RAISED" layoutX="737.0" layoutY="2.0" onAction="#minimize" prefHeight="14.0" prefWidth="14.0" stylesheets="@SMSSTYLE.css" text=" " />
+      <AnchorPane fx:id="drawer" layoutX="820.0" prefHeight="500.0" prefWidth="295.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="295.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../school.management.login.icons/SMSH.png" />
+               </image>
+            </ImageView>
+            <JFXButton id="back_but" fx:id="back_but" buttonType="RAISED" onAction="#returne" prefHeight="23.0" prefWidth="23.0" stylesheets="@SMSSTYLE.css" text="  " AnchorPane.topAnchor="0.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton id="close_but" buttonType="RAISED" layoutX="249.0" onAction="#close" prefHeight="14.0" prefWidth="14.0" stylesheets="@SMSSTYLE.css" text="  " />
+            <JFXButton id="mini_but" buttonType="RAISED" layoutX="211.0" onAction="#minimize" prefHeight="14.0" prefWidth="14.0" stylesheets="@SMSSTYLE.css" text="  " />
+            <Label alignment="CENTER" layoutX="36.0" layoutY="139.0" prefHeight="73.0" prefWidth="134.0" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="40.0" />
+               </font>
+               <effect>
+                  <Glow level="0.31">
+                     <input>
+                        <DropShadow blurType="ONE_PASS_BOX" height="44.72" radius="21.799999999999997" spread="0.13" width="44.48" />
+                     </input>
+                  </Glow>
+               </effect>
+            </Label>
+            <JFXButton fx:id="Login_but" layoutX="174.0" layoutY="353.0" onAction="#Login" prefHeight="28.0" prefWidth="84.0" style="-fx-background-color: #99367d; -fx-border-radius: 5em; -fx-background-radius: 5em;" stylesheets="@SMSSTYLE.css" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+               <tooltip>
+                  <Tooltip style="background-color: white;" text="ENTER" textAlignment="CENTER" />
+               </tooltip>
+            </JFXButton>
+            <JFXTextField fx:id="UserId" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="42.0" layoutY="250.0" prefHeight="25.0" prefWidth="209.0" promptText="USER ID" style="-fx-background-color: #99367d; -fx-min-height: 0.8cm; -fx-min-width: 5.5cm; -fx-text-inner-color: white;">
+               <font>
+                  <Font name="Trebuchet MS" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="passW" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="43.0" layoutY="312.0" promptText="PASSWORD" style="-fx-background-color: #99367d; -fx-min-height: 0.8cm; -fx-min-width: 5.5cm; -fx-text-inner-color: white; -fx-highlight-text-fill: white;">
+               <font>
+                  <Font name="Trebuchet MS" size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <Label fx:id="query" alignment="CENTER" layoutX="54.0" layoutY="410.0" prefHeight="25.0" prefWidth="167.0" textFill="WHITE">
+               <font>
+                  <Font name="Trebuchet MS" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

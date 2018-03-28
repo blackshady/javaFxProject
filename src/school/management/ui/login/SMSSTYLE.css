@@ -1,0 +1,46 @@
+
+.button:hover{
+     -fx-background-color:#ee419b;
+}
+
+#staff_login{
+     
+   -fx-background-image: url("../../../../school.management.login.icons/SMSSTAFF.png");
+  
+   -fx-background-repeat:no-repeat;
+   -fx-background-position:center;
+  
+}
+
+#admin_login
+{
+   -fx-background-image: url("../../../../school.management.login.icons/SMSADMIN.png");
+   -fx-background-repeat:no-repeat;
+   -fx-background-position:center;
+}
+
+#close_but{
+       -fx-background-image: url("../../../../school.management.login.icons/SMSCLOSE.png");
+   -fx-background-repeat:no-repeat;
+   -fx-background-position:center;
+}
+
+#mini_but{
+    -fx-background-image: url("../../../../school.management.login.icons/SMSMINI.png");
+   -fx-background-repeat:no-repeat;
+   -fx-background-position:center;
+}
+
+#LoginPage{
+    -fx-background-image: url("../../../../school.management.login.icons/SMSH.png");
+   -fx-background-repeat:no-repeat;
+   -fx-background-position:center;
+}
+
+
+#back_but{
+    -fx-background-image: url("../../../../school.management.login.icons/SMSBACK.png");
+   -fx-background-repeat:no-repeat;
+   -fx-background-position:center;
+}
+

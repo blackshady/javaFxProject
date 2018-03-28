@@ -1,0 +1,36 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.jfx-radio-button{
+     -jfx-selected-color:#ec268f;
+       
+}
+
+.jfx-rippler{
+    -jfx-rippler-fill :#ec268f;
+}
+
+
+#Upload{
+    
+      -fx-background-image:url("../../../../school.management.ui.staff.icons/SMSuploadpass.png"); 
+        -fx-background-repeat:no-repeat;
+}
+
+.red-radio-button .dot {
+  -fx-mark-highlight-color: red ;
+  -fx-mark-color: red ;
+}
+
+
+.radioButtonFX .radio:selected {
+    -fx-background-color: yellow;
+}
+
+.radioButtonFX .radio-button .radio:selected {
+    -fx-background-color: blue;
+}

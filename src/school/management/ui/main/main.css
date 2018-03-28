@@ -1,0 +1,105 @@
+
+.mainFxmlClass {
+
+}
+
+.jfx-tab-pane .headers-region {
+    -fx-background-color: #ec268f;
+}
+
+.jfx-tab-pane .tab-header-background {
+    -fx-background-color: #ec268f;
+}
+.jfx-tab-pane .tab-selected-line {
+    -fx-stroke: #ec268f;
+    -fx-stroke-width: 3pt;
+}
+
+#ADMIN_IFO{
+    
+    -fx-background-image:url("../../../../school.management.ui.grid.icons/BUT1.png");
+    -fx-background-repeat:no-repeat;
+}
+
+#STUDENT_IFO{
+    
+    -fx-background-image:url("../../../../school.management.ui.grid.icons/BUT2.png");
+    -fx-background-repeat:no-repeat;
+    
+}
+
+#STAFF_INFO{
+    -fx-background-image:url("../../../../school.management.ui.grid.icons/BUT3.png");
+    -fx-background-repeat:no-repeat;
+}
+
+#STUDENT_RESULT{
+    -fx-background-image:url("../../../../school.management.ui.grid.icons/BUT4.png");
+    -fx-background-repeat:no-repeat;
+    
+}
+
+#EDIT_RESULT{
+    
+    -fx-background-image:url("../../../../school.management.ui.grid.icons/BUT5.png");
+       -fx-background-repeat:no-repeat;
+    
+}
+
+#ADD_RESULT{
+    -fx-background-image:url("../../../../school.management.ui.grid.icons/BUT6.png");
+       -fx-background-repeat:no-repeat;
+    
+}
+
+#STUDENT_ASS{
+   -fx-background-image:url("../../../../school.management.ui.grid.icons/BUT7.png");
+       -fx-background-repeat:no-repeat;
+     
+    
+}
+
+#EDIT_ASS{
+    
+    -fx-background-image:url("../../../../school.management.ui.grid.icons/BUT8.png");
+       -fx-background-repeat:no-repeat;
+    
+}
+
+#ADD_ASS{
+    -fx-background-image:url("../../../../school.management.ui.grid.icons/BUT6.png");
+       -fx-background-repeat:no-repeat;
+    
+    
+}
+
+#NEW_ADD{
+      -fx-background-color: #e5b1d1;
+    -fx-background-image:url("../../../../school.management.ui.grid.icons/NEWADD.png");
+       -fx-background-repeat:no-repeat;
+    -fx-background-position:left;
+}
+
+#NEW_STAFF{
+    -fx-background-color: #e5b1d1;
+     -fx-background-image:url("../../../../school.management.ui.grid.icons/NEWSTAFF.png");
+       -fx-background-repeat:no-repeat;
+    -fx-background-position:left;
+}
+
+#NEW_STUDENT{
+      -fx-background-color: #e5b1d1;
+    -fx-background-image:url("../../../../school.management.ui.grid.icons/NEWSTUDENT.png");
+       -fx-background-repeat:no-repeat;
+    -fx-background-position:left;
+}
+
+#PHOTOID{
+ 
+}
+
+#search_but{
+    
+    -fx-background-image:url("../../../../school.management.ui.main.icons/SEARCH.png"); 
+    -fx-background-repeat:no-repeat;
+}
